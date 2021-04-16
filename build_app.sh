@@ -14,6 +14,7 @@ cmake \
     -DCMAKE_TOOLCHAIN_FILE=scripts/cmake/bare-metal-toolchain.cmake \
     -DUSE_CASE_BUILD=img_class \
     -Dimg_class_MODEL_TFLITE_PATH=output/mobilenet_v2_1.0_224_quantized_1_default_1_vela.tflite \
+    -DCMAKE_BUILD_TYPE=Debug \
     ..
 make -j8
 popd
