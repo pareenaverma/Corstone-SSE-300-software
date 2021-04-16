@@ -2,8 +2,7 @@
 
 git clone --recursive "https://review.mlplatform.org/ml/ethos-u/ml-embedded-evaluation-kit"
 sed -i -E 's/8.1-M.Main.dsp/cortex-m55/g' ml-embedded-evaluation-kit/scripts/cmake/bare-metal-toolchain.cmake
-curl -L https://github.com/ARM-software/ML-zoo/blob/master/models/image_classification/mobilenet_v2_1.0_224/tflite_uint8/mobilenet_v2_1.0_224_quantized_1_default_1.tflite?raw=true --output mobilenet_v2_1.0_224_quantized_1_
-default_1.tflite
+curl -L https://github.com/ARM-software/ML-zoo/blob/master/models/image_classification/mobilenet_v2_1.0_224/tflite_uint8/mobilenet_v2_1.0_224_quantized_1_default_1.tflite?raw=true --output mobilenet_v2_1.0_224_quantized_1_default_1.tflite
 mv mobilenet_v2_1.0_224_quantized_1_default_1.tflite ml-embedded-evaluation-kit/
 
 pushd ml-embedded-evaluation-kit
