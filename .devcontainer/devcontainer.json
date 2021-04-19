@@ -1,0 +1,38 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.134.0/containers/cpp
+{
+	"workspaceFolder": "/home/user1",
+	"name": "ml-evaluation",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+
+	"runArgs": [
+		"--cap-add=SYS_PTRACE",
+		"--security-opt", "seccomp=unconfined"
+	],
+
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"keil-studio.device": "ARMCM55",
+		"keil-studio.programPattern": "**/*.cprj",
+		"keil-studio.binaryPattern": "**/Objects/*.axf",
+		"keil-studio.showDeploy": "both",
+		"keil-studio.showDebug": "both"
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"arm-debug.keil-studio-vscode",
+		"arm-debug.gdb-debug-adapter",
+		"ms-vscode.cpptools"
+	],
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	 "forwardPorts": [10500],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "gcc -v",
+
+	// Comment out this line to run as root instead.
+	"remoteUser": "user1"
+}
