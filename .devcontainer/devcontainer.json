@@ -24,7 +24,8 @@
 	"extensions": [
 		"arm-debug.keil-studio-vscode",
 		"arm-debug.gdb-debug-adapter",
-		"ms-vscode.cpptools"
+		"ms-vscode.cpptools",
+		"/home/user1/system/Arm-GDBPlugin-FVP-0.0.1.vsix"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
