@@ -1,0 +1,28 @@
+{
+"version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Debug",
+            "type": "build",
+            "command": "/home/user1/system/FVP_Corstone_SSE-300_Ethos-U55/models/Linux64_GCC-6.4/FVP_Corstone_SSE-300_Ethos-U55",
+            "args": [
+                "/workspaces/Corstone-SSE-300-software/ml-embedded-evaluation-kit/build/bin/ethos-u-img_class.axf"
+            ]
+        },
+        {
+            "type": "deploy",
+            "label": "FVP Corstone SSE 300",
+            "command": "/home/user1/system/FVP_Corstone_SSE-300_Ethos-U55/models/Linux64_GCC-6.4/FVP_Corstone_SSE-300_Ethos-U55",
+            "args": [
+                "-q",
+                "--cyclelimit",
+                "100000000",
+                "-f",
+                "/workspaces/Corstone-SSE-300-software/FVP_config.txt",
+                "-a /workspaces/Corstone-SSE-300-software/ml-embedded-evaluation-kit/build/bin/ethos-u-img_class.axf"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
+
