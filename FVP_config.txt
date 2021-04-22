@@ -1,0 +1,9 @@
+mps3_board.visualisation.disable-visualisation=1     
+mps3_board.uart0.out_file=out.file     
+mps3_board.telnetterminal0.start_telnet=1     
+mps3_board.uart0.unbuffered_output=1     
+mps3_board.uart0.shutdown_tag="EXITTHESIM"     
+cpu0.CFGITCMSZ=15     
+cpu0.CFGDTCMSZ=15 
+mps3_board.telnetterminal0.start_port=10500
+

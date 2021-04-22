@@ -6,11 +6,13 @@
             "type": "gdb-debug",
             "request": "launch",
             "runToMain": true,
-            "program": "/workspaces/Corstone-SSE-300-software/ml-embedded-evaluation-kit/build/bin/ethos-u_img_class.axf",
+            "program": "/workspaces/Corstone-SSE-300-software/ml-embedded-evaluation-kit/build/bin/ethos-u-img_class.axf",
             "gdbServerPort": "<port:31627>",
             "gdbServer": "FVP_Corstone_SSE-300",
             "gdbServerArguments": [
-                "--allow-debug-plugin",
+                "S",
+		"-f",
+		"/workspaces/Corstone-SSE-300-software/FVP_config.txt",
                 "--plugin",
                 "/home/user1/system/GDBRemoteConnection.so"
             ],
