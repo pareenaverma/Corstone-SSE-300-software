@@ -8,9 +8,9 @@
             "runToMain": true,
             "program": "/workspaces/Corstone-SSE-300-software/ml-embedded-evaluation-kit/build/bin/ethos-u-img_class.axf",
             "gdbServerPort": "<port:31627>",
-            "gdbServer": "FVP_Corstone_SSE-300",
+            "gdbServer": "/home/user1/system/FVP_Corstone_SSE-300_Ethos-U55/models/Linux64_GCC-6.4/FVP_Corstone_SSE-300_Ethos-U55",
             "gdbServerArguments": [
-                "S",
+                "-S",
 		"-f",
 		"/workspaces/Corstone-SSE-300-software/FVP_config.txt",
                 "--plugin",
