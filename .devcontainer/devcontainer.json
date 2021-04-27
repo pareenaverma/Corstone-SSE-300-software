@@ -29,7 +29,7 @@
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	 "forwardPorts": [10500, 31627],
+	 "forwardPorts": [5000, 31627],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "gcc -v",
